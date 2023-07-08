@@ -1,0 +1,64 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: var(--color-dark);
+  height: 100vh;
+  color: var(--color-white);
+  padding: 10px;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  width: 100%;
+  padding: 10px 8px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.menu:hover {
+  background-color: var(--color-dark-hover);
+}
+
+.main {
+  flex: 6;
+  background-color: #dad9d9;
+  padding: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main {
+    flex: none;
+  }
+
+  .sidebar {
+    flex: none;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+  }
+
+  .menu {
+    width: fit-content;
+  }
+}

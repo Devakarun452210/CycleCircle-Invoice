@@ -1,0 +1,95 @@
+.dashboard {
+  display: flex;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: var(--color-dark);
+  height: 100vh;
+  color: var(--color-white);
+  padding: 10px;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.menu:hover {
+  background-color: var(--color-dark-hover);
+}
+
+.main {
+  flex: 6;
+  height: 100vh;
+  background-color: #dad9d9;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboardElements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+
+.dashboardProduct,
+.dashboardAmount,
+.dashboardInvoices {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  height: 180px;
+  padding-left: 30px;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dashboardProduct {
+  background-color: #8c1c96;
+}
+
+.dashboardAmount {
+  background-color: #f8b500;
+}
+
+.dashboardInvoices {
+  background-color: #e33332;
+}
+
+.dashboardProductContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 10px;
+}
+.productIcon {
+  font-size: 22px;
+}
+
+.productAmnt {
+  font-size: 24px;
+}
