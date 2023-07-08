@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  position: relative;
 }
 
 .loginContainer {
@@ -59,4 +60,8 @@
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
+}
+
+.signupModals {
+  position: absolute;
 }
