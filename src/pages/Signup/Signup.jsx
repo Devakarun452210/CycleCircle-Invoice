@@ -11,7 +11,6 @@ const Signup = () => {
   };
   return (
     <div className="login">
-      {openModal && SignupModal}
       <div className="loginContainer">
         <h3 className="loginContainerHeading">Sign Up</h3>
         <input type="text" placeholder="Username" />
@@ -27,6 +26,7 @@ const Signup = () => {
           </Link>
         </div>
       </div>
+      <div className="signupModals">{openModal && <SignupModal />}</div>
     </div>
   );
 };
